@@ -22,9 +22,7 @@ return or echo your output if you echo result then write exit; other wise you wi
 ```php
 
 function ajaxcall() {
-
     $title = $_POST['post_title'];
-
 	$a = [
 		"name"=>"shivam",
 		"title"=>$title,
@@ -49,7 +47,8 @@ add_action('wp_ajax_nopriv_ajaxcall', 'ajaxcall');
 - Add this code in script file or inside script tag
 ``` javascript
 
-const url = "<?php echo admin_url('admin-ajax.php'); ?>";
+// const url = "<?php echo admin_url('admin-ajax.php'); ?>";
+const url = "/wp-admin/admin-ajax.php";
 function fetchdata(){
     const form = new FormData();
     form.append('action', 'ajaxcall');
