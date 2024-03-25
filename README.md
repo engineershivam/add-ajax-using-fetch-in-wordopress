@@ -38,7 +38,7 @@ add_action('wp_ajax_nopriv_ajaxcall', 'ajaxcall');
 
 ## On Front End
 
-- Define url
+- Define ajax url
 - Create a FormData object 
 - Don't forget to send action without action wordpress not able to get which method should call 
 - Call this function according to your need
